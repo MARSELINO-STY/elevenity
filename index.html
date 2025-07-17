@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html><html lang="id"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Elevenity Class</title>
   <style>
     :root {
@@ -10,154 +8,170 @@
       --accent-color: #7c4dff;
       --bg-light: #f5f3ff;
       --text-color: #2d2d2d;
-    }
+    }body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-color);
+}
 
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-color);
-    }
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
 
-    header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 24px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
+section.intro {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #7c4dff, #9575cd);
+  color: white;
+  text-align: center;
+}
 
-    section.intro {
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #7c4dff, #9575cd);
-      color: white;
-      text-align: center;
-    }
+.paragraph {
+  background-color: white;
+  margin: 30px auto;
+  padding: 24px;
+  max-width: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
 
-    .paragraph {
-      background-color: white;
-      margin: 30px auto;
-      padding: 24px;
-      max-width: 1000px;
-      border-radius: 20px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    }
+.photo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+}
 
-    .photo-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 24px;
-      margin-top: 24px;
-    }
+.photo-box {
+  width: 140px;
+  text-align: center;
+}
 
-    .photo-box {
-      width: 140px;
-      text-align: center;
-    }
+.photo-box img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent-color);
+  transition: transform 0.3s ease;
+}
 
-    .photo-box img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid var(--accent-color);
-      transition: transform 0.3s ease;
-      aspect-ratio: 1 / 1;
-    }
+.photo-box img:hover {
+  transform: scale(1.05);
+}
 
-    .photo-box img:hover {
-      transform: scale(1.05);
-    }
+.photo-box p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
 
-    .photo-box p {
-      margin-top: 10px;
-      font-weight: 600;
-      color: var(--primary-color);
-    }
+.carousel-section {
+  padding: 40px 20px;
+  background-color: #ede7f6;
+}
 
-    .carousel-section {
-      padding: 40px 20px;
-      background-color: #ede7f6;
-    }
+.carousel-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
 
-    .carousel-container {
-      overflow-x: auto;
-      white-space: nowrap;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
 
-    .carousel-container::-webkit-scrollbar {
-      display: none;
-    }
+.carousel-item {
+  display: inline-block;
+  width: 280px;
+  margin-right: 16px;
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
 
-    .carousel-item {
-      display: inline-block;
-      width: 280px;
-      margin-right: 16px;
-      scroll-snap-align: start;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 16px;
-    }
+.carousel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
 
-    .carousel-item img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-    }
   </style>
-</head>
-<body>
+</head><body>
   <header>
     <h1>Elevenity Class🥶</h1>
     <p>Motonya Ges 🤭</p>
-  </header>
-
-  <section class="intro">
+  </header>  <section class="intro">
     <h2>Wellcome To Web Elevenity👻</h2>
     <p>Iki loh rek member ku 🤩🤙🏻.</p>
-  </section>
-
-  <section class="paragraph">
+  </section>  <section class="paragraph">
     <p><strong>YOIKI TA 😜🤙🏻</strong></p>
     <div class="photo-row">
-      <!-- 32 foto siswa -->
+      <!-- 32 siswa -->
+      <!-- Ganti src dan nama sesuai kebutuhan -->
       <!-- Contoh -->
-      <!-- Ganti foto1.jpg dll dengan gambar nyata -->
-      <!-- Ulangi untuk 32 siswa -->
-      <div class="photo-box">
-        <img src="images/foto1.jpg" alt="Siswa 1">
-        <p>Nama Siswa 1</p>
-      </div>
-      <!-- Tambahkan sampai siswa 32 -->
+      <div class="photo-box"><img src="foto1.jpg" alt="Siswa 1"><p>Nama Siswa 1</p></div>
+      <div class="photo-box"><img src="foto2.jpg" alt="Siswa 2"><p>Nama Siswa 2</p></div>
+      <div class="photo-box"><img src="foto3.jpg" alt="Siswa 3"><p>Nama Siswa 3</p></div>
+      <div class="photo-box"><img src="foto4.jpg" alt="Siswa 4"><p>Nama Siswa 4</p></div>
+      <div class="photo-box"><img src="foto5.jpg" alt="Siswa 5"><p>Nama Siswa 5</p></div>
+      <div class="photo-box"><img src="foto6.jpg" alt="Siswa 6"><p>Nama Siswa 6</p></div>
+      <div class="photo-box"><img src="foto7.jpg" alt="Siswa 7"><p>Nama Siswa 7</p></div>
+      <div class="photo-box"><img src="foto8.jpg" alt="Siswa 8"><p>Nama Siswa 8</p></div>
+      <div class="photo-box"><img src="foto9.jpg" alt="Siswa 9"><p>Nama Siswa 9</p></div>
+      <div class="photo-box"><img src="foto10.jpg" alt="Siswa 10"><p>Nama Siswa 10</p></div>
+      <div class="photo-box"><img src="foto11.jpg" alt="Siswa 11"><p>Nama Siswa 11</p></div>
+      <div class="photo-box"><img src="foto12.jpg" alt="Siswa 12"><p>Nama Siswa 12</p></div>
+      <div class="photo-box"><img src="foto13.jpg" alt="Siswa 13"><p>Nama Siswa 13</p></div>
+      <div class="photo-box"><img src="foto14.jpg" alt="Siswa 14"><p>Nama Siswa 14</p></div>
+      <div class="photo-box"><img src="foto15.jpg" alt="Siswa 15"><p>Nama Siswa 15</p></div>
+      <div class="photo-box"><img src="foto16.jpg" alt="Siswa 16"><p>Nama Siswa 16</p></div>
+      <div class="photo-box"><img src="foto17.jpg" alt="Siswa 17"><p>Nama Siswa 17</p></div>
+      <div class="photo-box"><img src="foto18.jpg" alt="Siswa 18"><p>Nama Siswa 18</p></div>
+      <div class="photo-box"><img src="foto19.jpg" alt="Siswa 19"><p>Nama Siswa 19</p></div>
+      <div class="photo-box"><img src="foto20.jpg" alt="Siswa 20"><p>Nama Siswa 20</p></div>
+      <div class="photo-box"><img src="foto21.jpg" alt="Siswa 21"><p>Nama Siswa 21</p></div>
+      <div class="photo-box"><img src="foto22.jpg" alt="Siswa 22"><p>Nama Siswa 22</p></div>
+      <div class="photo-box"><img src="foto23.jpg" alt="Siswa 23"><p>Nama Siswa 23</p></div>
+      <div class="photo-box"><img src="foto24.jpg" alt="Siswa 24"><p>Nama Siswa 24</p></div>
+      <div class="photo-box"><img src="foto25.jpg" alt="Siswa 25"><p>Nama Siswa 25</p></div>
+      <div class="photo-box"><img src="foto26.jpg" alt="Siswa 26"><p>Nama Siswa 26</p></div>
+      <div class="photo-box"><img src="foto27.jpg" alt="Siswa 27"><p>Nama Siswa 27</p></div>
+      <div class="photo-box"><img src="foto28.jpg" alt="Siswa 28"><p>Nama Siswa 28</p></div>
+      <div class="photo-box"><img src="foto29.jpg" alt="Siswa 29"><p>Nama Siswa 29</p></div>
+      <div class="photo-box"><img src="foto30.jpg" alt="Siswa 30"><p>Nama Siswa 30</p></div>
+      <div class="photo-box"><img src="foto31.jpg" alt="Siswa 31"><p>Nama Siswa 31</p></div>
+      <div class="photo-box"><img src="foto32.jpg" alt="Siswa 32"><p>Nama Siswa 32</p></div>
     </div>
-  </section>
-
-  <section class="carousel-section">
+  </section>  <section class="carousel-section">
     <h2 style="text-align: center; color: var(--primary-color);">HMZZ📸</h2>
     <div class="carousel-container">
       <div class="carousel-item">
-        <img src="images/moment1.jpg" alt="Momen 1">
+        <img src="moment1.jpg" alt="Momen 1">
         <p style="text-align:center; margin-top:10px;">Foto bareng</p>
       </div>
       <div class="carousel-item">
-        <img src="images/moment2.jpg" alt="Momen 2">
+        <img src="moment2.jpg" alt="Momen 2">
         <p style="text-align:center; margin-top:10px;">Foto bareg</p>
       </div>
       <div class="carousel-item">
-        <img src="images/moment3.jpg" alt="Momen 3">
+        <img src="moment3.jpg" alt="Momen 3">
         <p style="text-align:center; margin-top:10px;">Foto Bareng</p>
       </div>
     </div>
   </section>
-</body>
-</html>
+</body></html>
